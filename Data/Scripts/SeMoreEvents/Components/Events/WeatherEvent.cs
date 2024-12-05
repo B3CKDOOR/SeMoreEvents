@@ -160,12 +160,12 @@ namespace SeMoreEvents.Components.Events
             if (_selectedWeatherId != currentWeatherId)
             {
                 if (_prevWeatherId == _selectedWeatherId)
-                    Block.TriggerAction(0);
+                    Block.TriggerAction(1);
                 return;
             }
 
             if (_prevWeatherId != currentWeatherId)
-                Block.TriggerAction(1);
+                Block.TriggerAction(2);
             _prevWeatherId = currentWeatherId;
         }
 
